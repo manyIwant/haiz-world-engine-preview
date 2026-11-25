@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HAIZ World Engine — 独立验收预览入口</title>
+  <style>
+    body { margin: 0; font-family: "Noto Serif SC", "Songti SC", Georgia, serif; background: #f4f1e8; color: #1f3a30; display: grid; place-items: center; min-height: 100vh; padding: 24px; box-sizing: border-box; }
+    main { max-width: 640px; width: 100%; background: #fbf9f3; border: 1px solid #d6cebd; border-radius: 14px; padding: 32px; box-shadow: 0 12px 32px rgba(31,58,48,0.08); }
+    h1 { margin: 0 0 8px; font-size: 24px; }
+    p { margin: 0 0 20px; color: #52625a; line-height: 1.65; font-size: 15px; }
+    .cards { display: grid; gap: 14px; }
+    a.card { display: block; text-decoration: none; color: inherit; background: #fff; border: 1px solid #d6cebd; border-radius: 10px; padding: 18px 20px; transition: border-color .15s, transform .15s; }
+    a.card:hover { border-color: #1f3a30; transform: translateY(-1px); }
+    .title { font-weight: 700; font-size: 17px; color: #1f3a30; margin-bottom: 4px; }
+    .desc { font-size: 13px; color: #617068; }
+    .meta { margin-top: 20px; font-size: 12px; color: #7a857e; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>HAIZ World Engine · 独立公网验收预览</h1>
+    <p>本预览部署自 <code>manyIwant/haiz</code> 的开发分支 <code>feat/haiz-world-engine</code>，与线上生产站点 <code>haiz.space</code> 完全隔离，支持桌面端与手机端浏览器直接访问。</p>
+    <div class="cards">
+      <a class="card" href="./world-engine.html">
+        <div class="title">1. HAIZ World Engine（世界引擎垂直切片） →</div>
+        <div class="desc">同一 3D 校园场景实时切换六种艺术画境 · 统一世界时钟与 86 年 ERA5 历史气象 · 51 骨骼人物/载具/橘猫 · 语义水彩地图 · 科学实验站</div>
+      </a>
+      <a class="card" href="./world-engine-lab.html">
+        <div class="title">2. Art &amp; Engineering Workbench（独立艺术与工程验收台） →</div>
+        <div class="desc">六画境实时 A/B 分屏对照 · 51 关节骨骼与步态滑步检测 · 数值科学内核浏览器验证 · 46 资产 GLB 审计台</div>
+      </a>
+    </div>
+    <div class="meta">提示：支持 URL 参数直达，例如 <code>world-engine.html?lens=inkwash</code>、<code>?era=1985-11-18</code>、<code>?wx=drizzle&amp;hour=20.3</code>、<code>?quality=low</code>。</div>
+  </main>
+</body>
+</html>
